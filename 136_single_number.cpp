@@ -5,16 +5,23 @@ using namespace std;
 int main()
 {        
     vector<int> nums={2,2,1};
-    for (int i:nums)
-     {
-        int count=0;
-        for (int j :nums)
-        {
-            (i==j)?count++:0;
-        }
-         if (count==1)
-        {
-         cout<<i;
-        }            
-     } 
+    // for (int i:nums)
+    //  {
+    //     int count=0;
+    //     for (int j :nums)
+    //     {
+    //         (i==j)?count++:0;
+    //     }
+    //      if (count==1)
+    //     {
+    //      cout<<i;
+    //     }            
+    //  } 
+    int final=0;
+    for(int i:nums)
+    {
+        final=final^i;
+    }
+    cout<<final;
+
 }
